@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรเเกรมตรวจสอบคำนำหน้านาม</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 25px;
+        }
+        .form {
+            background-color: rgb(195, 195, 252);
+            width: 30%;
+            padding: 10%;
+            margin-left: 25%;
+        }
+        select,option{
+            width: 100px;
+            padding: 10px;
+        }
+        input{
+            width: 100px;
+            padding: 10px;
+    
+        }
+          
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <h1 >โปรเเกรมตรวจสอบคำนำหน้านาม</h1>
+    <div class="form">
+
+    <form action="check_prefix.php" method="post">
+    <label for="">เลือกเพศของคุณ</label>
+    <select name="tes">
+        <option value="นาย">นาย</option>
+        <option value="นาง" >นาง</option>
+        <option value="นางสาว">นางสาว</option>
+        <option value="เด็กชาย">เด็กชาย</option>
+        <option value="เด็กหญิง">เด็กหญิง</option>
+    </select >
+    <input type="submit" value="ส่ง" >
+    </form>
+
+    </div>
+    
+    
+</body>
+</html>
