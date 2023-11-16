@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เเม่สูตรคูณ</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 60px;
+        }
+        h1{
+            text-align: center;
+            font-size: 35px;
+            font-family: cursive;
+        }
+
+        input{
+            width: 200px;
+            height: 28px;
+            align-items: center;
+            margin-top: 1rem;
+            border-radius: 10px 10px 10px 10px;
+            
+        }
+        .form{
+            background-color:#333;
+            width: 900px;
+            height: 300px;
+            margin-left: 250px;
+            border-radius: 25px 25px 25px 25px;
+        }
+        label{
+            color: white;
+        }
+        label,input{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1> โปรเเกรมสร้างสูตรคูณ </h1>
+
+    <form action="process_multiply.php" method="post">
+ <div class="form">
+ <label for="">ป้อนเเม่ที่ต้องการ</label>
+    <input type="number" name="m"> <br>
+
+    <label for="">ป้อนเลขเเรกที่ต้องการ</label>
+    <input type="number" name="a"> <br>
+
+    <label for="">ป้อนเลขสุดท้ายที่ต้องการ</label>
+    <input type="number" name="n"> <br>
+
+    <input type="submit" value="สร้างสูตรคูณ" class="s">
+ </div>
+    </form>
+        
+</body>
+</html>
