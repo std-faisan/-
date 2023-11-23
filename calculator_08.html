@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เเม่สูตรคูณ</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 60px;
+        }
+        h1{
+            text-align: center;
+            font-size: 35px;
+            font-family: cursive;
+        }
+
+        input{
+            width: 200px;
+            height: 28px;
+            align-items: center;
+            margin-top: 1rem;
+            border-radius: 10px 10px 10px 10px;
+            
+        }
+        .form{
+            background-color:#333;
+            width: 900px;
+            height: 300px;
+            margin-left: 250px;
+            border-radius: 25px 25px 25px 25px;
+           
+        }
+        label{
+            color: white;
+        }
+        label,input{
+            margin-top: 30px;
+        }
+        select{
+            width: 80px;
+            height: 40px;
+            margin-left: px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> โปรเเกรมเครื่องคิดเลข </h1>
+
+    <form action="process_calculator.php" method="get">
+<div class="form">
+ <label for=""></label>
+    <label for="">ป้อนเลขตัวเเรก</label>
+    <input type="number" name="num1"> <br><br>
+
+    <select name="sign">
+        <option value="plus">+</option>
+        <option value="minas" >-</option>
+        <option value="multiply">*</option>
+        <option value="p">/</option>
+    </select > <br>
+
+    <label for="">ป้อนเลขตัวที่สอง</label>
+    <input type="number" name="num2"> <br> <br>
+
+    <input type="submit" value="คำนวณ" class="submit">
+ </div>
+    </form>
+        
+</body>
+</html>
