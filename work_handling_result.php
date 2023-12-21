@@ -9,7 +9,7 @@ $Text3 = $_POST ['Text3'];
 
 switch ($m) {
     case 'r':
-        $ff = fopen($fn,$m) or die("ไม่สามารถสร้างได้");
+        $ff = fopen($fn,$m) or die("ไม่สามารถสร้างได้้");
         echo fread($ff,filesize($fn));
         break;
     case 'w':
