@@ -3,34 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>เเก้ไข เพิ่ม</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 18px;
+        }
+        .form {
+            background-color:#333;
+            width: 30%;
+            padding: 5%;
+            margin-left: 30%;
+            border-radius: 20px 20px 20px 20px;
+        }
+        select,option{
+            width: 80px;
+            padding: 10px;
+        }
+        input{
+            width: 80px;
+            padding: 10px;
+    
+        }
+        label{
+            color: white;
+        }
+    </style>
 </head>
+
+
+
+
+
+
 <body>
-    <form action="work_handling_result.php" method="post">
-        <label for="">File</label>
-        <input type="text">
-
-        <select name="Mode">
-            <option value="a">r</option>
-            <option value="a">w</option>
-            <option value="w" >a</option>
-        </select >
-
-        <label for="">TEXT1</label>
-        <input type="text" name="text1">
-
-        <label for="">TEXT2</label>
-        <input type="text" name="text2">
-
-        <label for="">TEXT3</label>
-        <input type="text" name="txet3">
-
-       
-        <input type="submit" value="ส่ง">
-
-
-
-
-    </form>
-</body>
-</html>
+    <h1 >เเก้ไข เพิ่ม สร้างไฟล์</h1>
+    <div class="form">
+        <form action="work_handling_result.php" method="post">
+            <label for="">Name File</label>
+            <input type="text" name="NameFile"><br><br>
+            <select name="mode" id="">
+                <option value="r">Open File (R)</option>
+                <option value="w">New File (W)</option>
+                <option value="a">Up File (A)</option>
+            </select><br><br>
+            <label for="">Text1</label>
+            <input type="text" name="Text1"><br><br>
+            <label for="">Text2</label>
+            <input type="text" name="Text2"><br><br>
+            <label for="">Text3</label>
+            <input type="text" name="Text3"><br><br>
+            <input type="submit" value="ส่ง"><br><br>
+        </form>
+    </div> 
