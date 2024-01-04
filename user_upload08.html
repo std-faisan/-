@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบส่งไฟล์ฃิ้นงาน</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        input{
+            width: 200px;
+            height: 28px;
+            align-items: center;
+            margin-top: 1rem;
+            border-radius: 10px 10px 10px 10px;
+            
+        }
+        .form{
+            background-color:#333;
+            width: 700px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px 25px 25px 25px;
+        }
+        label{
+            color: white;
+            font-size: 30px;
+        }
+        label,input{
+            margin-top: 70px;
+        }
+       .btn{
+        background-color: blueviolet;
+        color: white;
+        font-size: 18px;
+       }
+       .form input {
+            display: block;
+            width:300px ;
+            height: 35px;
+            padding-left:20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .a {
+            background-color: white;
+            width: 200px;
+            height: 22px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px 10px 10px 10px;
+        }
+                .form{
+            background-color:#333;
+            width: 700px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px 25px 25px 25px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="process_upload08.php" method="post" enctype="multipart/form-data">
+        <div  class="form">
+            <label class="lbl" for="">ระบบส่งไฟล์ชื้นงาน</label>
+            <div class="a">
+                <input class="up" type="file" name="upfile">
+            </div>
+            <input class="btn" type="submit" value="ส่งไฟล์" name="submit">
+        </div>
+      </form> 
+        
+</body>
+</html>
