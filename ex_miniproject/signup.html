@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าเข้าสู้ระบบ</title>
+    <style>
+        .logo{
+            width: 140px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* border: 1.5px solid black; */
+        }
+        .signup input{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+            width: 200px;
+            height: 28px;
+            padding-left: 20px;
+            border: 1.5px dashed black;
+            
+        }
+        .signup button[type=submit]{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+            width: 224px;
+            height: 32px;
+            border: 1.5px double white;
+            background-color: blue;
+            color: white;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .signup button[type=reset]{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            width: 224px;
+            height: 32px;
+            border: 1.5px double white;
+            background-color:red;
+            color: white;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .signup select{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+            width: 150 px;
+            height: 32px;
+            border: 1.5px double black;
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        .body{
+            background-color:rgb(199, 195, 132);
+            width: 270px;
+            height: 430px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            border-radius: 15px;
+            box-shadow: 1000px;
+            
+        }
+        a{
+            color: blue;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        /* a:visited{
+            color: yellow;
+        } */
+        a:hover{
+            color: red;
+        }
+        /* a:active{
+            
+        } */
+        body{
+            background-image: url('images/1.jpg');
+            background-size: 100% 130%;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="body">
+         <img src="images/user.png" alt="user logo" class="logo">
+
+    <h2>ลงทะเบียนใช่งาน</h2>
+    
+    <form action="process_singup.php" method="post">
+        <div class="signup"> 
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="hidden" name="level" value="student">
+            <button type="submit">ลงทะเบียนใช่งาน</button>  
+            <span> <a href="index.html">เข้าสู้ระบบ?</a> </span>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

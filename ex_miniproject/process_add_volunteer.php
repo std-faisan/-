@@ -1,0 +1,24 @@
+<?php
+include "config.php";
+session_start();
+
+
+$ve = $_POST['volunteer'];
+$lo = $_POST['location'];
+$ho = $_POST['hours'];
+$da = $_POST['dayevent'];
+$un = $_SESSION['uname'];
+
+$sql1 ="INSERT INTO todo VALUES (0,'$ve','$lo','$ho','$da','$un')";
+$qry1 = mysqli_query($conn,$sql1);
+if(!$qry1){
+    echo"ไม่สามารถเพิ่มข้อมูลได้";
+    header("refresh:2; url = home.php");
+}else{
+    echo"เพิ่มข้อมูลเรียบร้อย";
+    header("refresh:2; url = home.php");
+}
+
+
+
+?>
